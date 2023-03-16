@@ -11,4 +11,4 @@ int main(void)
 	write(STDERR_FILENO, msg, sizeof(msg) - 1);
 
 	return (1);
-}	
+}
