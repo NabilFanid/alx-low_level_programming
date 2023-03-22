@@ -1,12 +1,28 @@
 #include "main.h"
 
 /**
- * _islower - check for lowercase char.
- * @c: the char to be checked.
- * Return: 1 if given char x is lowercase, 0 otherwise.
+ * print_alphabet_x10 - check the code.
+ *
+ * Return: Always 0.
  */
 
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	return (c >= 97 && c <= 122);
+	int i;
+	char c;
+
+	c = 'a';
+	i = 0;
+	while (i <= 9)
+	{
+		while (c <= 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+		c = 'a';
+		_putchar('\n');
+		i++;
+	}
 }
+
